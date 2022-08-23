@@ -1,4 +1,12 @@
+.about-section .social-links a i,
+.about-section .couple i.fa-pagelines,
+.about-section .couple h3,
 .header .nav ul li a.active,
 .header .nav ul li a:hover{
-    color: green;
+    color: forestgreen;
+}
+
+.about-section .social-links a i,
+.about-section .couple img{
+    border-color: forestgreen;
 }
