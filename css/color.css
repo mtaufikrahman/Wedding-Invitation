@@ -10,3 +10,7 @@
 .about-section .couple img{
     border-color: forestgreen;
 }
+
+.about-section .social-links a:hover i{
+    background-color: forestgreen;
+}

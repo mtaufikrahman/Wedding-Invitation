@@ -322,10 +322,22 @@ footer{
     padding-top: 30px;
 }
 
+.about-section .social-links a{
+    display: inline-block;
+    margin: 0 3px;
+}
+
 .about-section .social-links a i{
     height: 32px;
     width: 32px;
     line-height: 30px;
     text-align: center;
     border: 1px solid transparent;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+.about-section .social-links a:hover i{
+    color: #f3f2f1;
 }
