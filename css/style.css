@@ -264,7 +264,7 @@ footer{
 
 /************************ about-section ************************/
 .about-section{
-    padding: 80px 0 80px;
+    padding: 80px 0 0;
 }
 
 .about-section .couple{
@@ -340,4 +340,93 @@ footer{
 
 .about-section .social-links a:hover i{
     color: #f3f2f1;
+}
+
+/************************ rundown ************************/
+.rundown-section{
+    padding: 80px 0 80px;
+}
+
+.rundown-section .rundown-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.rundown-section .rundown-content::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    background-color: #cccccc;
+}
+
+.rundown-section .rundown-item i{
+    display: none;
+}
+
+.rundown-section .rundown-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.rundown-section .rundown-item:last-child{
+    margin-bottom: 0;
+}
+
+.rundown-section .rundown-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.rundown-section .rundown-item:nth-child(odd) .rundown-text{
+    padding: 0 60px 0 15px;
+    text-align: right;
+}
+
+.rundown-section .rundown-item:nth-child(odd) .rundown-img{
+    padding: 0 15px 0 60px;
+}
+
+.rundown-section .rundown-item:nth-child(even) .rundown-text{
+    padding: 0 60px 0 15px;
+    padding: 0 15px 0 60px;
+}
+
+.rundown-section .rundown-item:nth-child(even) .rundown-img{
+    padding: 0 60px 0 15px;
+}
+
+.rundown-section .rundown-text,
+.rundown-section .rundown-img{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.rundown-section .rundown-text h3{
+    font-size: 24px;
+    margin: 0 0 8px;
+    color: #000000;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.rundown-section .rundown-text span.time{
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555;
+    margin: 0 0 15px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.rundown-section .rundown-text p{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    color: #555555;
 }
