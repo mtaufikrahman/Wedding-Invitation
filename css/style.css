@@ -363,10 +363,6 @@ footer{
     background-color: #cccccc;
 }
 
-.rundown-section .rundown-item i{
-    display: none;
-}
-
 .rundown-section .rundown-item{
     display: flex;
     flex-wrap: wrap;
@@ -399,6 +395,18 @@ footer{
 
 .rundown-section .rundown-item:nth-child(even) .rundown-img{
     padding: 0 60px 0 15px;
+}
+
+.rundown-section .rundown-item i{
+    position: absolute;
+    /* top: 5px; */
+    left: 50%;
+    margin-left: -15px;
+    width: 31px;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    background-color: #f3f2f1;
 }
 
 .rundown-section .rundown-text,
