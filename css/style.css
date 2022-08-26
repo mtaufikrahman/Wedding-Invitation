@@ -264,7 +264,7 @@ footer{
 
 /************************ about-section ************************/
 .about-section{
-    padding: 80px 0 0;
+    padding: 80px 0 80px;
 }
 
 .about-section .couple{
@@ -342,7 +342,89 @@ footer{
     color: #f3f2f1;
 }
 
-/************************ rundown ************************/
+/************************ event info ************************/
+.info-section{
+    padding: 80px 0 130px;
+}
+
+.info-section .section-title h2{
+    /* color: white; */
+}
+
+.info-section .info-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-section .info-item:nth-child(2){
+    transform: translateY(50px);
+}
+
+.info-section .info-item-inner{
+    background-color: white;
+    padding: 60px 45px 60px;
+    /* padding: 60px 45px 100px; */
+    text-align: center;
+    box-shadow: 0 0 10px #888888;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.info-section .info-item-inner::before{
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 5px solid white;
+    z-index: -1;
+}
+
+.info-section .info-item-inner h3{
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.info-section .info-item-inner span{
+    color: whitesmoke;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.info-section .info-item-inner span.time{
+    margin-bottom: 15px;
+}
+
+.info-section .info-item-inner p{
+    color: whitesmoke;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+}
+
+/* .info-section .info-item-inner img{
+    position: absolute;
+    width: 40px;
+    left: 50%;
+    bottom: 18px;
+    z-index: -2;
+    margin-left: -20px;
+} */
+
+/************************ event rundown ************************/
 .rundown-section{
     padding: 80px 0 80px;
 }

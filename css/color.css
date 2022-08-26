@@ -5,14 +5,16 @@
 .about-section .couple h3,
 .header .nav ul li a.active,
 .header .nav ul li a:hover{
-    color: forestgreen;
+    color: darkseagreen;
 }
 
 .about-section .social-links a i,
 .about-section .couple img{
-    border-color: forestgreen;
+    border-color: darkseagreen;
 }
 
+/* .info-section, */
+.info-section .info-item-inner,
 .about-section .social-links a:hover i{
-    background-color: forestgreen;
+    background-color: darkseagreen;
 }
