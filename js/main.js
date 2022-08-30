@@ -18,16 +18,25 @@ $(window).on("load", function(){
 })
 
 $(document).ready(function(){
-    peopleFilter($(".filter-btn.active").attr("data-target"))
+
+    // family filter
+    familyFilter($(".filter-btn.active").attr("data-target"))
     $(".filter-btn").click(function(){
         if(!$(this).hasClass("active")){
-            peopleFilter($(this).attr("data-target"))
+            familyFilter($(this).attr("data-target"))
         }
     })
-    function peopleFilter(target){
+    function familyFilter(target){
         $(".filter-btn").removeClass("active");
         $(".filter-btn[data-target='"+target+"']").addClass("active");
         $(".family-item").hide();
         $(".family-item[data-category='"+target+"']").fadeIn();
     }
+
+    // gallery pop up
+    // const wHeight = $(window).height();
+    // $(".gallery-popup img").css("max-height", wHeight + "px")
+
+    // let gpIndex = 0;
+    // const totalGalleryItems = $(".gallery-item").length;
 })
