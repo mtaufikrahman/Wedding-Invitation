@@ -13,7 +13,7 @@
     border-color: darkseagreen;
 }
 
-/* .info-section, */
+.family-section .filter-btn.active,
 .info-section .info-item-inner,
 .about-section .social-links a:hover i{
     background-color: darkseagreen;

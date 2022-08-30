@@ -16,3 +16,18 @@ $(window).on("load", function(){
 
     slideShow();
 })
+
+$(document).ready(function(){
+    peopleFilter($(".filter-btn.active").attr("data-target"))
+    $(".filter-btn").click(function(){
+        if(!$(this).hasClass("active")){
+            peopleFilter($(this).attr("data-target"))
+        }
+    })
+    function peopleFilter(target){
+        $(".filter-btn").removeClass("active");
+        $(".filter-btn[data-target='"+target+"']").addClass("active");
+        $(".family-item").hide();
+        $(".family-item[data-category='"+target+"']").fadeIn();
+    }
+})

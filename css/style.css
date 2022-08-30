@@ -192,7 +192,7 @@ footer{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.2);
     z-index: -1;
 }
 
@@ -519,4 +519,72 @@ footer{
     line-height: 26px;
     margin: 0;
     color: #555555;
+}
+
+/************************ event rundown ************************/
+.family-section{
+    padding: 80px 0 80px;
+}
+
+.family-section .family-filter{
+    padding: 0 15px;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.family-section .filter-btn{
+    background-color: #dedede;
+    color: #555555;
+    padding: 7px 15px;
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.family-section .filter-btn.active{
+    color: white;
+}
+
+.family-section .family-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 15px;
+    margin-top: 25px;
+    display: none;
+}
+
+.family-section .family-item-inner{
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.family-section .family-item-inner img{
+    width: 100%;
+    box-shadow: 0 0 10px #cccccc;
+    margin-top: -40px;
+    transition: all 0.5s ease;
+}
+
+.family-section .family-item-inner:hover img{
+    transform: scale(0.95);
+}
+
+.family-section .family-item-inner h4{
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    margin: 20px 0 5px;
+    text-transform: capitalize;
+}
+
+.family-section .family-item-inner p{
+    color: #555555;
+    font-size: 16px;
+    margin: 0 0 10px;
+    text-transform: capitalize;
 }
