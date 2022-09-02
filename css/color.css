@@ -1,3 +1,4 @@
+.btn-1:hover,
 .rundown-section .rundown-item i,
 .rundown-section .rundown-text h3,
 .about-section .social-links a i,
@@ -8,11 +9,14 @@
     color: darkseagreen;
 }
 
+.btn-1,
 .about-section .social-links a i,
 .about-section .couple img{
     border-color: darkseagreen;
 }
 
+.rsvp-section,
+.btn-1,
 .family-section .filter-btn.active,
 .info-section .info-item-inner,
 .about-section .social-links a:hover i{
