@@ -635,7 +635,7 @@ footer{
     display: flex;
 }
 
-.gallery-popup img{
+.gallery-popup img.gp-img{
     width: auto;
     height: auto;
     max-width: 100%;
